@@ -1,7 +1,11 @@
 import { useState } from "react"
 
 function Keypad({ handleClick, handleClear, calculate,input,setinput }) {
+    
+    //this state is used to toggle between plus and minus buttons
+    
     const[addminus,setaddminus]=useState("+");
+    //we will call handclick on all numbers,calculate on "=" and clear on "c" buttons 
     return (
         <div className="keypad">
             <div className="row">
